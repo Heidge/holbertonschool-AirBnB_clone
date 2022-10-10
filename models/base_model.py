@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """Base module for airbnb clone"""
-import cmd, sys, uuid
+import uuid
 from datetime import datetime
 
 class BaseModel:
@@ -13,7 +13,6 @@ class BaseModel:
         self.updated_at = datetime.utcnow()
 
     def __str__(self):
-        dictionary_str = self.__dict__.copy()
         return f"[{self.__class__.__name__}] ({self.id}) ({self.__dict__})"
 
     def save(self):
@@ -21,8 +20,8 @@ class BaseModel:
 
     def to_dict(self):
         dictionary = self.__dict__.copy()
-        dictionary["__class__"] = self.__class__.__name__
-        dictionary["created_at"] = self.created_at.isoformat
-        dictionary["updated_at"] = self.updated_at.isoformat
-        return (self.__dict__)
+        dictionary["__class__"] = str(__class__.__name__)
+        dictionary["created_at"] = self.created_at.isoformat()
+        dictionary["updated_at"] = self.updated_at.isoformat()
+        return (dictionary)
 
