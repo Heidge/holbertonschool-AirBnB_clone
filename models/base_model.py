@@ -18,6 +18,8 @@ class BaseModel:
                 elif key == "updated_at":
                     self.updated_at = datetime.strptime(value,
                     "%Y-%m-%dT%H:%M:%S.%f")
+                elif key == "__class__":
+                    pass
                 else:
                     setattr(self, key, value)
 
