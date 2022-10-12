@@ -1,19 +1,19 @@
 #!/usr/bin/python3
 """console for airbnb admin"""
-import cmd, sys
+import cmd
 
 
 class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter."""
 
-    prompt = '(hbnb)'
+    prompt = "(hbnb)"
 
-    def do_empty(self, arg):
-        """Do nothing upon receiving an empty line."""
+    def emptyline(self, arg):
+        """do nothing upon receiving an empty line."""
         pass
 
     def do_quit(self, arg):
-        "Quit command to exit the program"
+        "quit command to exit the program"
         return True
 
     def do_EOF(self, line):
