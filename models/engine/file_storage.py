@@ -4,7 +4,6 @@
 """
 import json
 from models import base_model
-import os
 
 
 class FileStorage():
@@ -30,8 +29,11 @@ class FileStorage():
 
     def reload(self):
         """ deserializes JSON to __objects if JSON file (__file_path) """
-        if os.path.exists(self.__file_path) is True:
-            with open(self.__file_path, 'r', encoding='utf-8') as f:
-                objects_dict = json.load(f)
-                for key, value in objects_dict.items():
-                    self.__objects[key] = eval(value['__class__'])(**value)
+        try:
+            with open(self.__file_path, "r", encoding="utf-8") as f:
+                for o in json.load(f).values():
+                    name = o["__class__"]
+                    del o["__class__"]
+                    self.new(eval(name)(**o))
+        except FileNotFoundError:
+            pass
