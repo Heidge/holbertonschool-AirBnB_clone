@@ -2,6 +2,7 @@
 """
     Module FileStorage class
 """
+import json
 
 
 class FileStorage():
@@ -13,10 +14,12 @@ class FileStorage():
 
     def all(self):
         """returns the dictionary __objects"""
-        return FileStorage.__objects
+        return self.__objects
 
     def new(self,obj):
+        self.__objects["{}.{}".format(type(obj).__name__, obj.id)] = obj
 
     def save(self):
-
-    def reload(self):
+        dictionary = {}
+        with open(self.__file_path, "w", encoding="utf-8") as f:
+            json.dump(dictionary, f)
