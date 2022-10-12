@@ -4,13 +4,13 @@ import cmd, sys
 
 
 class HBNBCommand(cmd.Cmd):
-
+    """Defines the HolbertonBnB command interpreter."""
 
     prompt = '(hbnb)'
 
     def do_empty(self, arg):
         """Do nothing upon receiving an empty line."""
-        return cmd.Cmd.emptyline(self)
+        pass
 
     def do_quit(self, arg):
         "Quit command to exit the program"
