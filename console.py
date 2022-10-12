@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+"""console for airbnb admin"""
 import cmd, sys
 
 
