@@ -1,9 +1,27 @@
 #!/usr/bin/python3
 """console for airbnb admin"""
 import cmd
+import re
+from shlex import split
 from models.base_model import BaseModel
 from models.__init__ import storage
 
+def parse(arg):
+    curly_braces = re.search(r"\{(.*?)\}", arg)
+    brackets = re.search(r"\[(.*?)\]", arg)
+    if curly_braces is None:
+        if brackets is None:
+            return [i.strip(",") for i in split(arg)]
+        else:
+            lexer = split(arg[:brackets.span()[0]])
+            retl = [i.strip(",") for i in lexer]
+            retl.append(brackets.group())
+            return retl
+    else:
+        lexer = split(arg[:curly_braces.span()[0]])
+        retl = [i.strip(",") for i in lexer]
+        retl.append(curly_braces.group())
+        return retl
 
 class HBNBCommand(cmd.Cmd):
     """Defines the HolbertonBnB command interpreter."""
@@ -38,41 +56,47 @@ class HBNBCommand(cmd.Cmd):
             storage.save()
 
     def do_show(self, arg):
-        i = 1
-        args = {}
-        for args in arg:
-            if i == 1:
-                args += arg
-            elif i == 2:
-                args += arg
-            i += 1
-        if arg == "":
+        argl = parse(arg)
+        objdict = storage.all()
+        if len(argl) == 0:
             print("** class name missing **")
-        elif args[1] not in self.classes:
+        elif argl[0] not in HBNBCommand.classes:
             print("** class doesn't exist **")
-        elif len(arg) < 2:
+        elif len(argl) == 1:
             print("** instance id missing **")
+        elif "{}.{}".format(argl[0], argl[1]) not in objdict:
+            print("** no instance found **")
         else:
-            result = "{} {}".format(args[1], args[2])
-            # If the instance of the class name doesn’t exist for the id, print ** no instance found ** (ex: $ show BaseModel 121212)
+            print(objdict["{}.{}".format(argl[0], argl[1])])
 
 
     def do_destroy(self, arg):
-        i = 1
-        args = {}
-        for args in arg:
-            if i == 1:
-                args += arg
-            elif i == 2:
-                args += arg
-            i += 1
-        if arg == "":
+        argl = parse(arg)
+        objdict = storage.all()
+        if len(argl) == 0:
             print("** class name missing **")
-        elif args[1] not in self.classes:
+        elif argl[0] not in HBNBCommand.classes:
             print("** class doesn't exist **")
+        elif len(argl) == 1:
+            print("** instance id missing **")
+        elif "{}.{}".format(argl[0], argl[1]) not in objdict.keys():
+            print("** no instance found **")
+        else:
+            del objdict["{}.{}".format(argl[0], argl[1])]
+            storage.save()
 
-
-
+    def do_all(self, arg):
+        argl = parse(arg)
+        if len(argl) > 0 and argl[0] not in HBNBCommand.classes:
+            print("** class doesn't exist **")
+        else:
+            objl = []
+            for obj in storage.all().values():
+                if len(argl) > 0 and argl[0] == obj.__class__.__name__:
+                    objl.append(obj.__str__())
+                elif len(argl) == 0:
+                    objl.append(obj.__str__())
+            print(objl)
 
 
 if __name__ == '__main__':
