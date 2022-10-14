@@ -16,7 +16,8 @@ The following elements compose the AirBnb clone and can be found in the reposito
 - An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
 
 
-![HBS](/img/intro1.png)
+
+![first step](/img/intro1.png "First step")
 
 ### Requirements 
 
