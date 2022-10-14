@@ -1,4 +1,4 @@
-![65f4a1dd9c51265f49d0](https://user-images.githubusercontent.com/98336206/177213884-58390904-70c0-42b2-9e90-fdc51163761f.png)
+![HBS](https://user-images.githubusercontent.com/98336206/177213884-58390904-70c0-42b2-9e90-fdc51163761f.png)
 
 # Holberton School - AirBnb clone
 
