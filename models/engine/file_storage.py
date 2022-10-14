@@ -1,7 +1,5 @@
 #!/usr/bin/python3
-"""
-    Module FileStorage class
-"""
+"""Module FileStorage class"""
 import json
 from models.base_model import BaseModel
 
@@ -17,7 +15,7 @@ class FileStorage():
         """returns the dictionary __objects"""
         return self.__objects
 
-    def new(self,obj):
+    def new(self, obj):
         self.__objects["{}.{}".format(type(obj).__name__, obj.id)] = obj
 
     def save(self):
