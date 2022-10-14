@@ -23,6 +23,17 @@ This abstraction will also allow you to change the type of storage easily withou
 
 Here is the list of commands available in the console, followed by examples to guide you in its handling :
 
+| Command | Description |
+| --- | --- |
+| `all` | 
+| `count` | 
+| `create` | 
+| `destroy` | 
+| `EOF` | Exit the program
+| `help` | Provides description of commands
+| `quit` | Exit the program
+| `show` | 
+| `update` | 
 
 
 
