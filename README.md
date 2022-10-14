@@ -53,6 +53,8 @@ Here is the list of commands available in the console, followed by examples to g
 | `show` | 
 | `update` | 
 
+### Examples
+
 
 ### Tests
 All tests are located in tests/ and can be execute all by running this command:
