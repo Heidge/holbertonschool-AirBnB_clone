@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="hhttps://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/65f4a1dd9c51265f49d0.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221014%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221014T091534Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=3a12c1935500d08daf14f6eed1f4c5338f53dc24841e8f93e2399a97c7642385" alt="HolbertonBnB logo">
+</p>
+
 # Holberton School - AirBnb clone
 
 ### Project description
