@@ -15,7 +15,8 @@ The following elements compose the AirBnb clone and can be found in the reposito
 - A database or files that store data (data = objects)
 - An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
 
-![HBS](https://postimg.cc/56qYKq0J)
+
+![HBS](/img/intro1.png)
 
 ### Requirements 
 
