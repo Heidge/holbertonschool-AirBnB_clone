@@ -54,6 +54,11 @@ Here is the list of commands available in the console, followed by examples to g
 | `update` | 
 
 
+### Tests
+All tests are located in tests/ and can be execute all by running this command:
+`$ python3 -m unittest discover tests`
+
+
 
 
 
