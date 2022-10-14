@@ -4,9 +4,9 @@
 
 from models.base_model import BaseModel
 
-class review(BaseModel):
+class Review(BaseModel):
     """Class review"""
     place_id = ""
     user_id = ""
     text = ""
-    
+
