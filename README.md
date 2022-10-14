@@ -15,6 +15,23 @@ The following elements compose the AirBnb clone and can be found in the reposito
 - A database or files that store data (data = objects)
 - An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
 
+![HBS](https://holbertonintranet.s3.amazonaws.com/uploads/medias/2018/6/815046647d23428a14ca.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIARDDGGGOU5BHMTQX4%2F20221014%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20221014T142352Z&X-Amz-Expires=86400&X-Amz-SignedHeaders=host&X-Amz-Signature=9b4a00bc96c8dc6c6789679f9ef2d5788cd0010c7fd975ae204d4892f15cbbb9)
+
+### Requirements 
+Knowledge in python3, how to use a command line interpreter, a computer with Ubuntu 14.04, python3 and pep8 style corrector.
+
+### Installation
+Clone the repository:
+...
+$ git clone https://github.com/MoustaphaElPsyCongroo/holbertonschool-AirBnB_clone.git
+...
+
+Launch the console application in interactive mode:
+...
+$ ./console.py
+...
+
+
 ### Console application
 
 The first piece is to manipulate a powerful storage system. This storage engine will give us an abstraction between “My object” and “How they are stored and persisted”. This means: from your console code (the command interpreter itself) and from the front-end and RestAPI you will build later, you won’t have to pay attention (take care) of how your objects are stored.
@@ -34,6 +51,8 @@ Here is the list of commands available in the console, followed by examples to g
 | `quit` | Exit the program
 | `show` | 
 | `update` | 
+
+
 
 
 
