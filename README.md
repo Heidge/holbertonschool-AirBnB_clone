@@ -17,7 +17,7 @@ The following elements compose the AirBnb clone and can be found in the reposito
 
 
 
-![first step](/img/intro1.png "First step")
+![first step](https://postimg.cc/56qYKq0J)
 
 ### Requirements 
 
