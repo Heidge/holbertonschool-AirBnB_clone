@@ -15,11 +15,11 @@ The following elements compose the AirBnb clone and can be found in the reposito
 - A database or files that store data (data = objects)
 - An API that provides a communication interface between the front-end and your data (retrieve, create, delete, update them)
 
-![HBS](https://ibb.co/cL9WCDm)
+![HBS](https://postimg.cc/56qYKq0J)
 
 ### Requirements 
 
-Knowledge in python3, how to use a command line interpreter, a computer with Ubuntu 14.04, python3 and pep8 style corrector.
+Knowledge in python3, how to use a command line interpreter, a computer with Ubuntu 20.04 LTS using python3 and PEP8 style corrector.
 
 ### Installation
 Clone the repository:
