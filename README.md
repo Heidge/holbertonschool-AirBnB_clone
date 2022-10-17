@@ -43,15 +43,14 @@ Here is the list of commands available in the console, followed by examples to g
 
 | Command | Description |
 | --- | --- |
-| `all` | 
-| `count` | 
-| `create` | 
-| `destroy` | 
+| `all` |  	Prints all string representation of all instances based or not on the class name 
+| `create` | Creates a new instance of the <class_name>. Creates a Json file with the object representation. and prints the id of created object.
+| `destroy` | Deletes and instance base on the class name and id.
 | `EOF` | Exit the program
 | `help` | Provides description of commands
 | `quit` | Exit the program
-| `show` | 
-| `update` | 
+| `show` | Prints the string representation of an instance based on the class name and id.
+| `update` | Updates an instance based on the class name and id by adding or updating attribute
 
 ### Examples
 
