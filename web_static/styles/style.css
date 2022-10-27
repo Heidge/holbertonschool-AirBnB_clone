@@ -1,0 +1,36 @@
+html{
+
+	scroll-behavior: smooth;
+	font-size: 100%;
+}
+
+:root{
+	--color-black: #090909;
+	--color-red: #FF0000;
+	--color-green: #00FF00;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+header{
+	background-color: var(--color-red);
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
+
+.footer{
+	background-color: var(--color-green);
+	text-align: center;
+	font-size: 120%;
+	color: var(--color-black);
+	height: 60px;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	margin: auto;
+}

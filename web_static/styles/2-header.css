@@ -1,0 +1,13 @@
+:root{
+	--color-black: #090909;
+	--color-red: #FF0000;
+	--color-green: #00FF00;
+}
+
+header{
+	background-color: var(--color-red);
+	height: 70px;
+	width: 100%;
+	position: absolute;
+	top: 0;
+}
