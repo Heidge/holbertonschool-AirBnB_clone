@@ -1,0 +1,18 @@
+:root{
+	--color-black: #090909;
+	--color-red: #FF0000;
+	--color-green: #00FF00;
+	/*header customizes variables*/
+	--background-color-header: #ffffff;
+}
+
+.header{
+	display: flex;
+	background-color: var(--background-color-header);
+	height: 70px;
+	width: 100%;
+	top: 0;
+	border-bottom: 1px solid #CCCCCC;
+	background: white url("../images/logo.png") 20px center no-repeat;
+}
+

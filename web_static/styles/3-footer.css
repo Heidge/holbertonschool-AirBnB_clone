@@ -1,0 +1,23 @@
+
+:root{
+	--color-black: #090909;
+	--color-red: #FF0000;
+	--color-green-flash: #00FF00;
+	/*footer customizes variables*/
+	--background-color-footer: #ffffff;
+}
+
+.footer{
+	display: inline-block;
+	background-color: var(--background-color-footer);
+	height: 60px;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	border-top: 1px #CCCCCC solid;
+}
+.footer p{
+	text-align: center;
+	padding:10px;
+
+}

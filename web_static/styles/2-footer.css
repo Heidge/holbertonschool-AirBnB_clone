@@ -5,6 +5,7 @@
 }
 
 footer{
+	display: block;
 	background-color: var(--color-green);
 	text-align: center;
 	font-size: 120%;
