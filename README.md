@@ -26,7 +26,7 @@ Knowledge in python3, how to use a command line interpreter, a computer with Ubu
 ### Installation
 Clone the repository:
 ```
-$ git clone https://github.com/MoustaphaElPsyCongroo/holbertonschool-AirBnB_clone.git
+$ git clone https://github.com/Heidge/holbertonschool-AirBnB_clone.git
 ```
 Launch the console application in interactive mode:
 ```
